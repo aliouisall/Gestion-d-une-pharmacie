@@ -19,6 +19,7 @@ CREATE TABLE `Pharmacien` (
 CREATE TABLE `Produit` (
   `idProd` int auto_increment,
   `nom` varchar(50),
+  `prix` int,
   `type` enum('Médicament', 'Organe et tissu', 'Produit Sanguin Labile', 'Lait maternel', 'Lentille', 'Produit Cosmétique'),
   CONSTRAINT pk_Produit PRIMARY KEY (idProd)
 );
